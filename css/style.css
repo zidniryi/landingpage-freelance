@@ -133,10 +133,11 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background: rgba(0, 0, 0);
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -160,7 +161,6 @@ h6 {
 #header #logo h1 a:hover {
   color: #fff;
   padding-left: 10px;
-  border-left: 4px solid #18d26e;
 }
 
 #header #logo img {
@@ -648,6 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
+  margin-top: 10%;
 }
 
 #about::before {
