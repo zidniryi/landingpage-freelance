@@ -28,6 +28,59 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .alternating-section {
+      padding: 40px;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .left-section {
+       background-image: url('https://www.desfran.com/wp-content/uploads/2020/10/singapore-skyline.jpg');
+      background-size: cover;
+      width: 100%;
+   
+    }
+
+    .right-section {
+      text-align: right;
+      background-image: url('./img/bg1.png');
+      background-size: cover;
+    }
+
+    /* Add hover effect for right-section */
+    .right-section:hover {
+      background-color: rgba(0, 128, 128, 0.7);
+      /* Background color with opacity */
+    }
+
+    /* Add hover effect for both sections */
+    .alternating-section:hover {
+      opacity: 0.8;
+    }
+
+    /* Fancy white "Read More" button style */
+    .read-more-btn {
+      background-color: #fff;
+      color: #007bff;
+      /* Blue button text color */
+      border: 2px solid #007bff;
+      /* Blue button border */
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s, border 0.3s;
+    }
+
+    .read-more-btn:hover {
+      background-color: #007bff;
+      /* Blue button background color on hover */
+      color: #fff;
+      /* White button text color on hover */
+    }
+  </style>
 </head>
 
 <body>
@@ -35,11 +88,9 @@
     Header
   ============================-->
   <header id="header">
-    <div class="container-fluid">
+    <div class="container">
       <div id="logo" class="pull-left">
         <h1><a href="#intro" class="scrollto">Restrategix</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container">
@@ -67,121 +118,62 @@
   </header>
   <!-- #header -->
 
-  <main id="main">
-    <section id="about">
-      <div class="container">
-        <header class="section-header">
-          <h3>Layanan di business consulting terdiri dari :</h3>
-        </header>
+  <main id="main" style="margin-top: 10%;">
+    <!-- <section id="about"> -->
+    <div class="container-fluid">
+      <header class="section-header">
+        <h3>Layanan di business consulting terdiri dari :</h3>
+      </header>
+    </div>
+    </div>
 
-
-      </div>
-      </div>
-
-      <div class="container mt-5">
-
-        <h4>Studi Kelayakan Bisnis</h4>
-        <p>
-          Studi kelayakan bisnis adalah sebuah kajian mendalam untuk menilai kelayakan suatu investasi atau bisnis yang
-          akan
-          dijalankan. Tujuan analisis ini untuk melakukan seleksi ide pengembangan bisnis baik produk atau jasa yang
-          paling
-          layak dan profitable untuk dijalankan perusahaan.
-        </p>
-
-        <h4>Market Research</h4>
-        <div class="text-center">
-          <img
-            src="https://static.vecteezy.com/system/resources/previews/005/878/743/original/marketing-modern-flat-concept-for-web-banner-design-male-marketer-analyzes-market-research-data-at-dashboard-optimized-strategy-and-promote-business-illustration-with-isolated-people-scene-free-vector.jpg"
-            alt="Market Research Image" class="img-fluid rounded mt-3" style="max-height: 300px;">
-        </div>
-        <p>
-          Riset pasar adalah sebuah aktivitas untuk mengenali, mengumpulkan informasi, dan memvalidasi pasar mengenai
-          apa yang
-          menjadi kebutuhan, keinginan, dan harapan terhadap suatu produk atau layanan. Riset pasar juga dapat membantu
-          perusahaan untuk mengetahui apa yang menjadi preferensi pasar dalam memilih suatu produk dan layanan.
-        </p>
-
-        <h5 class="mt-4">Restrategix.id membantu perusahaan dalam melakukan aktivitas riset pasar terdiri dari:</h5>
-        <ol class="list-group list-group-numbered mt-3">
-          <li class="list-group-item">
-            <h6>Deep Market Riset</h6>
-            <p>
-              Untuk mengenali lebih dalam behavior customer yang dincar dari produk atau jasa yang akan ditawarkan serta
-              melihat apa yang menjadi preferensi customer dalam membuat keputusan pembelian.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h6>Market Research Top Brand Index</h6>
-            <p>
-              Riset pasar untuk mengukur awareness, kepuasan, dan loyalitas customer terhadap suatu brand. Riset ini
-              juga akan
-              menganalisis tentang potensi perpindahan customer ke brand lain.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h6>Market Research New Product Development & Competitors</h6>
-            <p>
-              Output riset ini menghasilkan informasi:
-            <ul>
-              <li>Hal-hal apa saja yang akan menjadi faktor penentu diterimanya suatu produk atau layanan.</li>
-              <li>Estimasi permintaan pelanggan.</li>
-              <li>Strategy penetapan harga dan Matrik SWOT baik internal dan eksternal.</li>
-              <li>Seberapa banyak intensitas customer dalam menggunakan produk/layanan dari kompetitor.</li>
-            </ul>
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h6>Market Research Iteration Product</h6>
-            <p>
-              Dibagian ini, strategy.id mengumpulkan informasi mengenai improvement apa saja yang harus dilakukan oleh
-              suatu
-              produk atau layanan yang sudah ada di pasar agar terciptanya product market fit.
-            </p>
-          </li>
-        </ol>
-
-        <h4 class="mt-4">Manajemen Risiko</h4>
-        <p>
-          Setiap bisnis dan investasi yang dijalankan terdapat risiko yang berbanding lurus dengan tingkat
-          profitabilitas yang
-          ingin didapatkan. Manajemen risiko merupakan sebuah proses pemetaan risiko (yang terjadi saat ini dan di masa
-          depan), pembuatan kerangka kerja, dan panduan dalam menghadapi setiap potensi risiko dari bisnis dan investasi
-          yang
-          dilakukan perusahaan.
-        </p>
-
-        <h4 class="mt-4">Sales Growth Acceleration</h4>
-        <div class="text-center">
-          <img src="https://img.freepik.com/premium-vector/money-growth-prediction-progress-report_132971-181.jpg"
-            alt="Sales Growth Acceleration Image" class="img-fluid rounded mt-3" style="max-height: 300px;">
-        </div>
-        <p>
-          Penjualan merupakan kunci dari keberlangsungan sebuah bisnis. IBTS Consulting menyediakan layanan sales
-          temporary
-          untuk membantu klien mengalami percepatan peningkatan penjualan secara eksponensial dengan tenggat waktu yang
-          telah
-          ditentukan di awal.
-        </p>
-
-        <h4 class="mt-4">Merchant Acquisition</h4>
-        <div class="text-center">
-          <img
-            src="https://img.freepik.com/premium-vector/business-negotiation-deal-making-acquisition-merger-buying-good-idea-concept-two-men-shaking-hands_426488-620.jpg?w=2000"
-            alt="Merchant Acquisition Image" class="img-fluid rounded mt-3" style="max-height: 300px;">
+    <!-- New -->
+    <div class="container">
+      <div class="col">
+        <!-- Section 1 (Left-aligned) -->
+        <div class="col-12 alternating-section left-section">
+          <h2><b>Studi Kelayakan Bisnis</b></h2>
+          <p>Studi kelayakan bisnis adalah sebuah kajian mendalam untuk menilai kelayakan suatu investasi atau bisnis
+            yang akan di
+            jalankan. Tujuan analisis ini untuk melakukan seleksi ide pengembangan bisnis baik produk atau jasa yang
+            paling layak
+            dan profitable untuk dijalankan perusahaan.</p>
         </div>
 
-        <p>
-          Collaboration adalah salah satu DNA kami dalam memberikan solusi terbaik untuk setiap klien. Restrategix.id
-          membantu
-          setiap perusahaan yang ingin membangun ekosistem merchant partnernya dari berbagai kategori.
-        </p>
+        <!-- Section 2 (Right-aligned) -->
+        <div class="alternating-section right-section">
+          <h2><b>Market research</b></h2>
+          <p class="text-left">Riset pasar adalah sebuah aktifitas untuk mengenali, mengumpulkan informasi dan memvalidasi pasar mengenai apa yang
+          menjadi kebutuhan, keinginan dan harapan terhadap suatu produk atau layanan. riset pasar juga dapat membantu perusahaan
+          untuk mengetahui apa yang menjadi preferensi pasar dalam memilih suatu produk dan layanan.</p>
+          <a href="/market-research.html" class="read-more-btn">Read More</a>
+        </div>
+
+        <!-- Section 3 (Left-aligned) -->
+        <div class="alternating-section left-section">
+          <h2><b>Manajemen Risiko</b></h2>
+          <p>Setiap bisnis dan investasi yang dijalankan terdapat risiko yang berbanding lurus dengan
+          Tingkat profitabilitas yang ingin didapatkan. Manajemen risiko merupakan sebuah proses
+          pemetaan risiko (yang terjadi saat ini dan dimasa depan), pembuatan kerangka kerja dan
+          panduan dalam menghadapi setiap potensi risiko dari bisnis dan investasi yang dilakukan
+          perusahaan.</p>
+        </div>
+
+        <!-- Section 4 (Right-aligned) -->
+        <div class="alternating-section right-section">
+          <h2><b>Merchant Acquisition</b></h2>
+          <p class="text-left">Collaboration adalah salah satu DNA kami dalam memberikan solusi terbaik untuk setiap klien.
+          Restrategix.id membantu setiap perusahaan yang ingin membangun ekosistem merchant
+          partnernya dari berbagai kategori</p>
+        </div>
+
       </div>
+    </div>
 
 
-    </section>
+    <!-- </section> -->
     <!-- #about -->
-    </section>
+    <!-- </section> -->
     <section id="clients" class="wow fadeInUp">
       <div class="container">
         <header class="section-header">
@@ -207,72 +199,36 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 footer-info">
+          <div class="col-lg-6 col-md-12 footer-info">
             <h3>Restrategix</h3>
             <p>
-              Kami hadir menjadi partner terpercaya bagi setiap klien dalam
-              menangani berbagai kebutuhan layanan bisnis. Kami
-              mendiversifikasi bisnis ke dalam tiga kategori yaitu business
-              consulting, software house & digital advertising
+              Kami hadir menjadi partner terpercaya bagi setiap klien dalam menangani berbagai kebutuhan layanan
+              bisnis. Kami
+              mendiversifikasi bisnis ke dalam tiga kategori yaitu business consulting, software house & digital
+              advertising
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">Home</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">About us</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">Services</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i>
-                <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i>
-                <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
+          <div class="col-lg-6 col-md-12 footer-info">
+            <h3>Contact Us</h3>
             <p>
-              A108 Adam Street <br />
-              New York, NY 535022<br />
-              United States <br />
               <strong>Phone:</strong> +1 5589 55488 55<br />
-              <strong>Email:</strong> info@example.com<br />
+              <strong>Email:</strong> customerservices@restrategix.id<br />
             </p>
 
-            <div class="social-links">
+            <!-- <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>
-              Tamen quem nulla quae legam multos aute sint culpa legam noster
-              magna veniam enim veniam illum dolore legam minim quorum culpa
-              amet magna export quem marada parida nodela caramase seza.
-            </p>
-            <form action="" method="post">
-              <input type="email" name="email" /><input type="submit" value="Subscribe" />
-            </form>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
+
+
 
     <div class="container">
       <div class="copyright">

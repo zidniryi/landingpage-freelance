@@ -38,6 +38,59 @@
       margin-bottom: 20px;
     }
   </style>
+  <style>
+    .alternating-section {
+      padding: 40px;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .left-section {
+      /* background-image: url('https://www.desfran.com/wp-content/uploads/2020/10/singapore-skyline.jpg'); */
+      background-size: cover;
+      width: 100%;
+
+    }
+
+    .right-section {
+      text-align: right;
+      /* background-image: url('./img/bg1.png'); */
+      background-size: cover;
+    }
+
+    /* Add hover effect for right-section */
+    .right-section:hover {
+      background-color: rgba(0, 128, 128, 0.7);
+      /* Background color with opacity */
+    }
+
+    /* Add hover effect for both sections */
+    .alternating-section:hover {
+      opacity: 0.8;
+    }
+
+    /* Fancy white "Read More" button style */
+    .read-more-btn {
+      background-color: #fff;
+      color: #007bff;
+      /* Blue button text color */
+      border: 2px solid #007bff;
+      /* Blue button border */
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s, border 0.3s;
+    }
+
+    .read-more-btn:hover {
+      background-color: #007bff;
+      /* Blue button background color on hover */
+      color: #fff;
+      /* White button text color on hover */
+    }
+  </style>
 </head>
 
 <body>
@@ -82,89 +135,55 @@
         <header class="section-header">
           <h3>Why Us?</h3>
         </header>
-
-
       </div>
       </div>
-
       <div class="container mt-5">
-        <section id="problem-solving" class="image-text-container">
-          <div class="row align-items-center">
-            <div class="col-md-6 order-md-2">
-              <h2>Problem Solving</h2>
+        <div class="container">
+          <div class="col">
+            <!-- Section 1 (Left-aligned) -->
+            <div class="col-12 alternating-section left-section" style="background-color: #1abc9c;">
+              <h2><b>Problem Solving</b></h2>
               <p>Kami menyelesaikan setiap permasalahan client dengan cara terbaik, tercepat, dan inovatif.</p>
             </div>
-            <div class="col-md-6 order-md-1">
-              <!-- Add your problem-solving illustration image here -->
-              <img src="./img/idea.png" alt="Problem Solving Illustration" class="img-fluid img-icon" />
-            </div>
-          </div>
-        </section>
 
-        <section id="experience" class="image-text-container">
-          <div class="row align-items-center">
-            <div class="col-md-6 order-md-2">
-              <h2>Experience</h2>
+            <!-- Section 2 (Right-aligned) -->
+            <div class="alternating-section right-section" style="background-color: #3498db;">
+              <h2><b>Experience</b></h2>
               <p>Pengalaman kami beberapa tahun sebagai professional di industry hospitality, digital agency, start-up,
-                clinic aesthetic, dan berbagai industry lainnya membawa kami menguasai landscape bisnis secara
-                comprehensive.
-              </p>
-            </div>
-            <div class="col-md-6 order-md-1">
-              <!-- Add your experience illustration image here -->
-              <img src="./img/experience.png" alt="Problem Solving Illustration" class="img-fluid img-icon">
+                clinic aesthetic,
+                dan berbagai industry lainnya membawa kami menguasai landscape bisnis secara comprehensive.</p>
 
             </div>
-          </div>
-        </section>
 
-        <section id="data-driven" class="image-text-container">
-          <div class="row align-items-center">
-            <div class="col-md-6 order-md-2">
-              <h2>Data Driven</h2>
+            <!-- Section 3 (Left-aligned) -->
+            <div class="alternating-section left-section" style="background-color: #9b59b6;">
+              <h2><b>Data Driven</b></h2>
               <p>Kami memahami data merupakan sebuah asset yang paling berharga. Data driven adalah salah satu cara kami
-                dalam
-                memberikan solusi terbaik untuk setiap klien.</p>
-            </div>
-            <div class="col-md-6 order-md-1" class="image-text-container">
-              <!-- Add your data-driven illustration image here -->
-              <img src="./img/data-driven.png" alt="Problem Solving Illustration" class="img-fluid img-icon">
+                dalam memberikan
+                solusi terbaik untuk setiap klien.</p>
 
             </div>
-          </div>
-        </section>
 
-        <section id="cost-efficient" class="image-text-container">
-          <div class="row align-items-center">
-            <div class="col-md-6 order-md-2">
-              <h2>Cost Efficient</h2>
-              <p>Di Restrategix.id, kami berusaha memberikan layanan dengan impact yang significant dengan biaya yang
-                sangat
-                terjangkau.</p>
-            </div>
-            <div class="col-md-6 order-md-1">
-              <!-- Add your cost-efficient illustration image here -->
-              <img src="./img/save-money.png" alt="Problem Solving Illustration" class="img-fluid img-icon">
+            <!-- Section 4 (Right-aligned) -->
+            <div class="alternating-section right-section" style="background-color: #f1c40f;">
+              <h2><b>Cost Efficient</b></h2>
+              <p>Di <b>Restrategix.id</b>, kami berusaha memberikan layanan dengan impact yang significant dengan biaya
+                yang sangat terjangkau.</p>
 
             </div>
-          </div>
-        </section>
 
-        <section id="integritas" class="image-text-container">
-          <div class="row align-items-center">
-            <div class="col-md-6 order-md-2">
-              <h2>Integritas</h2>
+            <!-- Section 3 (Left-aligned) -->
+            <div class="alternating-section left-section" style="background-color: #c0392b;">
+              <h2><b>Integritas</b></h2>
               <p>Kami menjaga semua kerahasiaan hasil pekerjaan klien yang sudah ditangani dan memastikan pekerjaan
-                selesai
-                sesuai dengan requirement dan dengan tenggat waktu yang sudah ditentukan.</p>
-            </div>
-            <div class="col-md-6 order-md-1">
-              <!-- Add your integritas illustration image here -->
-              <img src="./img/integritas.png" alt="Problem Solving Illustration" class="img-fluid img-icon">
+                selesai sesuai dengan
+                requirement dan dengan tenggat waktu yang sudah ditentukan.</p>
 
             </div>
+
           </div>
-        </section>
+        </div>
+
       </div>
 
 
@@ -197,40 +216,17 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 footer-info">
+          <div class="col-lg-6 col-md-12 footer-info">
             <h3>Restrategix</h3>
             <p>
-              Kami hadir menjadi partner terpercaya bagi setiap klien dalam
-              menangani berbagai kebutuhan layanan bisnis. Kami
-              mendiversifikasi bisnis ke dalam tiga kategori yaitu business
-              consulting, software house & digital advertising
+              Kami hadir menjadi partner terpercaya bagi setiap klien dalam menangani berbagai kebutuhan layanan
+              bisnis. Kami
+              mendiversifikasi bisnis ke dalam tiga kategori yaitu business consulting, software house & digital
+              advertising
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">Home</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">About us</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">Services</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i>
-                <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <i class="ion-ios-arrow-right"></i>
-                <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-6 col-md-12 footer-contact">
             <h4>Contact Us</h4>
             <p>
               A108 Adam Street <br />
@@ -240,29 +236,19 @@
               <strong>Email:</strong> info@example.com<br />
             </p>
 
-            <div class="social-links">
+            <!-- <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>
-              Tamen quem nulla quae legam multos aute sint culpa legam noster
-              magna veniam enim veniam illum dolore legam minim quorum culpa
-              amet magna export quem marada parida nodela caramase seza.
-            </p>
-            <form action="" method="post">
-              <input type="email" name="email" /><input type="submit" value="Subscribe" />
-            </form>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
+
+
 
     <div class="container">
       <div class="copyright">
