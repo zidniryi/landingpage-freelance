@@ -37,7 +37,7 @@
     }
 
     .left-section {
-      background-image: url('https://www.desfran.com/wp-content/uploads/2020/10/singapore-skyline.jpg');
+      /* background-image: url('https://www.desfran.com/wp-content/uploads/2020/10/singapore-skyline.jpg'); */
       background-size: cover;
       width: 100%;
 
@@ -80,6 +80,125 @@
       color: #fff;
       /* White button text color on hover */
     }
+
+      .card:hover {
+        background-color: rgba(0, 128, 128, 0.7);
+      }
+
+     .card {
+        border: none;
+        background-color: #3498db;;
+        color: white;
+      }
+
+    .margin-main{
+      margin-top: 30%;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    .margin-main{
+      margin-top: 10%;
+    }
+      /* Half the size of the card */
+      /* Reset */
+      .card {
+        border: none;
+        color: white;
+      }
+
+      .card-left {
+        width: 100%;
+        background-color: #3498db;;
+      }
+
+      .scetion-right {
+        width: 100%;
+        background-color: #3498db;;
+      }
+
+      .card:hover {
+        background-color: rgba(0, 128, 128, 0.7);
+      }
+
+      .card-img {
+        border-radius: 0;
+        width: 100%;
+        height: auto%;
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        @media (max-width: 1140px) {
+          margin: 0;
+          transform: none;
+          width: 100%;
+          position: absolute;
+          height: auto;
+        }
+      }
+
+      .vgr-cards {
+        .card {
+          display: flex;
+          flex-flow: wrap;
+          flex: 100%;
+          margin-bottom: 40px;
+
+          &:nth-child(even) .card-img-body {
+            order: 2;
+          }
+
+          &:nth-child(even) .card-body {
+            padding-left: 1.2rem;
+            padding-right: 1.25rem;
+          }
+
+          @media (max-width: 576px) {
+            display: block;
+          }
+
+        }
+
+        .card-img-body {
+          flex: 1;
+          overflow: hidden;
+          position: relative;
+
+          @media (max-width: 576px) {
+            width: 100%;
+            height: 100%;
+          }
+
+        }
+
+        .card-img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          margin-left: 50%;
+          transform: translateX(-50%);
+
+          @media (max-width: 1140px) {
+            margin: 0;
+            transform: none;
+            width: 100%;
+            height: auto;
+          }
+
+        }
+
+        .card-body {
+          flex: 2;
+          padding: 1.25rem;
+
+          @media (max-width: 576px) {
+            padding: 0;
+          }
+
+        }
+      }
+    }
   </style>
 </head>
 
@@ -119,7 +238,7 @@
   </header>
   <!-- #header -->
 
-  <main id="main" style="margin-top: 10%;">
+  <main id="main" class="margin-main">
     <!-- <section id="about"> -->
     <div class="container-fluid">
       <header class="section-header">
@@ -128,52 +247,74 @@
     </div>
     </div>
 
-    <!-- New -->
     <div class="container">
-      <div class="col">
-        <!-- Section 1 (Left-aligned) -->
-        <div class="col-12 alternating-section left-section">
-          <h2><b>Studi Kelayakan Bisnis</b></h2>
-          <p>Studi kelayakan bisnis adalah sebuah kajian mendalam untuk menilai kelayakan suatu investasi atau bisnis
-            yang akan di
-            jalankan. <br />Tujuan analisis ini untuk melakukan seleksi ide pengembangan bisnis baik produk atau jasa
-            yang
-            paling layak
-            dan profitable untuk dijalankan perusahaan.</p>
+      <div class="card-group vgr-cards">
+
+        <div class="card scetion-right">
+          <div class="card-img-body">
+            <img class="card-img" src="./img/icon-studi-kelayakan-bisnis-use-AI.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title"><b>Studi Kelayakan Bisnis</b></h4>
+            <p>Studi kelayakan bisnis adalah sebuah kajian mendalam untuk menilai kelayakan suatu investasi atau
+              bisnis
+              yang akan di
+              jalankan.Tujuan analisis ini untuk melakukan seleksi ide pengembangan bisnis baik produk atau
+              jasa
+              yang
+              paling layak
+              dan profitable untuk dijalankan perusahaan.</p>
+          </div>
         </div>
 
-        <!-- Section 2 (Right-aligned) -->
-        <div class="alternating-section right-section">
-          <h2><b>Market research</b></h2>
-          <p class="text-left">Riset pasar adalah sebuah aktifitas untuk mengenali, mengumpulkan informasi dan
-            memvalidasi pasar mengenai apa yang
-            menjadi kebutuhan, keinginan dan harapan terhadap suatu produk atau layanan. riset pasar juga dapat membantu
-            perusahaan
-            untuk mengetahui apa yang menjadi preferensi pasar dalam memilih suatu produk dan layanan.</p>
-          <a href="/market-research.html" class="read-more-btn">Read More</a>
+
+        <div class="card scetion-right">
+          <div class="card-img-body">
+            <img class="card-img" src="./img/icon-studi-kelayakan-bisnis-use-AI.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title"><b>Market research</b></h4>
+            <p class="card-text">Riset pasar adalah sebuah aktifitas untuk mengenali, mengumpulkan informasi dan
+              memvalidasi pasar mengenai apa yang
+              menjadi kebutuhan, keinginan dan harapan terhadap suatu produk atau layanan. riset pasar juga dapat
+              membantu
+              perusahaan
+              untuk mengetahui apa yang menjadi preferensi pasar dalam memilih suatu produk dan layanan.</p>
+            <a href="./market-research.html" class="btn btn-outline-primary read-more-btn">Read More</a>
+
+          </div>
+        </div>
+        <div class="card scetion-right">
+          <div class="card-img-body">
+            <img class="card-img" src="./img/icon-studi-kelayakan-bisnis-use-AI.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title"><b>Manajemen Risiko</b></h4>
+            <p class="card-text">Setiap bisnis dan investasi yang dijalankan terdapat risiko yang berbanding lurus
+              dengan
+              Tingkat profitabilitas yang ingin didapatkan. Manajemen risiko merupakan sebuah proses
+              pemetaan risiko (yang terjadi saat ini dan dimasa depan),, <br /> pembuatan kerangka kerja dan
+              panduan dalam menghadapi setiap potensi risiko dari bisnis dan investasi yang dilakukan
+              perusahaan</p>
+          </div>
         </div>
 
-        <!-- Section 3 (Left-aligned) -->
-        <div class="alternating-section left-section">
-          <h2><b>Manajemen Risiko</b></h2>
-          <p>Setiap bisnis dan investasi yang dijalankan terdapat risiko yang berbanding lurus dengan
-            Tingkat profitabilitas yang ingin didapatkan. Manajemen risiko merupakan sebuah proses
-            pemetaan risiko (yang terjadi saat ini dan dimasa depan),, <br /> pembuatan kerangka kerja dan
-            panduan dalam menghadapi setiap potensi risiko dari bisnis dan investasi yang dilakukan
-            perusahaan.</p>
+        <div class="card scetion-right">
+          <div class="card-img-body">
+            <img class="card-img" src="./img/icon-studi-kelayakan-bisnis-use-AI.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title"><b>Merchant Acquisition</b></h4>
+            <p class="card-text">Collaboration adalah salah satu DNA kami dalam memberikan solusi terbaik untuk setiap
+              klien.
+              Restrategix.id membantu setiap perusahaan yang ingin membangun ekosistem merchant
+              partnernya dari berbagai kategori</p>
+          </div>
         </div>
-
-        <!-- Section 4 (Right-aligned) -->
-        <div class="alternating-section right-section">
-          <h2><b>Merchant Acquisition</b></h2>
-          <p class="text-left">Collaboration adalah salah satu DNA kami dalam memberikan solusi terbaik untuk setiap
-            klien.
-            Restrategix.id membantu setiap perusahaan yang ingin membangun ekosistem merchant
-            partnernya dari berbagai kategori</p>
-        </div>
-
       </div>
     </div>
+
+
 
 
     <!-- </section> -->
