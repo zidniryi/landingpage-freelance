@@ -81,44 +81,45 @@
       /* White button text color on hover */
     }
 
-      .card:hover {
-        background-color: rgba(0, 128, 128, 0.7);
-      }
+    .card:hover {
+      background-color: rgba(0, 128, 128, 0.7);
+      color: white;
+    }
 
-     .card {
-        border: none;
-        background-color: #3498db;;
-        color: white;
-      }
+    .card {
+      border: none;
+    }
 
-    .margin-main{
+    .margin-main {
       margin-top: 30%;
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-    .margin-main{
-      margin-top: 10%;
-    }
+      .margin-main {
+        margin-top: 10%;
+      }
+
       /* Half the size of the card */
       /* Reset */
       .card {
         border: none;
-        color: white;
+        border-width: 1px solid white;
       }
 
       .card-left {
         width: 100%;
-        background-color: #3498db;;
+        ;
       }
 
       .scetion-right {
         width: 100%;
-        background-color: #3498db;;
+        ;
       }
 
       .card:hover {
         background-color: rgba(0, 128, 128, 0.7);
+        color: white;
       }
 
       .card-img {
@@ -143,7 +144,6 @@
           display: flex;
           flex-flow: wrap;
           flex: 100%;
-          margin-bottom: 40px;
 
           &:nth-child(even) .card-img-body {
             order: 2;
@@ -216,7 +216,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li class="menu-active"><a href="./index.html">Home</a></li>
           <li><a href="/about.html">About Us</a></li>
           <li class="menu-has-children">
             <a href="">Services</a>
@@ -227,7 +227,7 @@
               </ul>
             </li>
             <!-- <li><a href=" #services">Services</a></li> -->
-              <li><a href="/why-us.html">Why Us</a></li>
+
               <li><a href="#team">Insight</a></li>
 
               <li><a href="#contact">Contact</a></li>
@@ -249,7 +249,6 @@
 
     <div class="container">
       <div class="card-group vgr-cards">
-
         <div class="card scetion-right">
           <div class="card-img-body">
             <img class="card-img" src="./img/icon-studi-kelayakan-bisnis-use-AI.jpeg" alt="Card image cap">
@@ -264,13 +263,16 @@
               yang
               paling layak
               dan profitable untuk dijalankan perusahaan.</p>
+            <br />
           </div>
         </div>
 
 
         <div class="card scetion-right">
           <div class="card-img-body">
-            <img class="card-img" src="./img/icon-market-research-ai.png" alt="Card image cap">
+            <img class="card-img"
+              src="/img/new-market-research-ai.png"
+              alt="Card image cap">
           </div>
           <div class="card-body">
             <h4 class="card-title"><b>Market research</b></h4>
@@ -296,6 +298,7 @@
               pemetaan risiko (yang terjadi saat ini dan dimasa depan),, <br /> pembuatan kerangka kerja dan
               panduan dalam menghadapi setiap potensi risiko dari bisnis dan investasi yang dilakukan
               perusahaan</p>
+            <br />
           </div>
         </div>
 
@@ -309,6 +312,8 @@
               klien.
               Restrategix.id membantu setiap perusahaan yang ingin membangun ekosistem merchant
               partnernya dari berbagai kategori</p>
+            <br />
+            <br />
           </div>
         </div>
       </div>
