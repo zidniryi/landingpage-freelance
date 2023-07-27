@@ -155,7 +155,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
 }
@@ -164,7 +164,9 @@ h6 {
 #header #logo h1 a:hover {
   color: #3498db;
   padding-left: 10px;
-  text-shadow: 2px 2px rgb(156, 153, 153);
+  text-shadow: 2px 2px rgb(206, 226, 232);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #header #logo img {
@@ -688,6 +690,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
+  height: 25rem;
 }
 
 #about .about-col .img {
