@@ -54,6 +54,24 @@
       });
     }
   </script>
+  <style>
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+
+    }
+
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+
+    }
+  </style>
 </head>
 
 <body>
@@ -105,6 +123,9 @@
         <header class="section-header">
           <header class="section-header">
             <h3>Contact Us</h3>
+            <img src="./img/gedung88.png" class="rounded mx-auto d-block" width="60%" />
+            <br />
+            <br />
           </header>
           <div class="row">
             <div class="col-md-6">
@@ -114,9 +135,12 @@
             </div>
             <div class="col-md-6">
               <!-- Google Map embed code -->
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9340502722147!2d106.84158131431043!3d-6.223853695488073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f433f3be809b%3A0xa1c95a1d0b53b94d!2sGedung%20EightyEight%40Kasablanka!5e0!3m2!1sen!2sid!4v1623779778143!5m2!1sen!2sid"
-                width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9340502722147!2d106.84158131431043!3d-6.223853695488073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f433f3be809b%3A0xa1c95a1d0b53b94d!2sGedung%20EightyEight%40Kasablanka!5e0!3m2!1sen!2sid!4v1623779778143!5m2!1sen!2sid"
+                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+              </div>
             </div>
           </div>
         </header>
@@ -134,11 +158,7 @@
     <section id="contact" class="section-bg wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h3>Contact Us</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque
-          </p>
+          <h3>Get in touch</h3>
         </div>
 
         <div class="row contact-info">
