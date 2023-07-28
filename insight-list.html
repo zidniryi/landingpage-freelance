@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Business consulting Restrategix/</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon" />
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .alternating-section {
+      padding: 40px;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .left-section {
+      /* background-image: url('https://www.desfran.com/wp-content/uploads/2020/10/singapore-skyline.jpg'); */
+      background-size: cover;
+      width: 100%;
+
+    }
+
+    .right-section {
+      text-align: right;
+      background-image: url('./img/bg1.png');
+      background-size: cover;
+    }
+
+
+    /* Add hover effect for both sections */
+    .alternating-section:hover {
+      opacity: 0.8;
+    }
+
+    /* Fancy white "Read More" button style */
+    .read-more-btn {
+      background-color: #fff;
+      color: #007bff;
+      /* Blue button text color */
+      border: 2px solid #007bff;
+      /* Blue button border */
+      border-radius: 5px;
+      padding: 8px 16px;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s, border 0.3s;
+    }
+
+    .card {
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      height: 30rem;
+    }
+
+    .margin-main {
+      margin-top: 30%;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      .margin-main {
+        margin-top: 10%;
+      }
+
+      /* Half the size of the card */
+      /* Reset */
+      .card {
+        border: none;
+        border-width: 1px solid white;
+      }
+
+      .card-left {
+        width: 100%;
+        ;
+      }
+
+      .scetion-right {
+        width: 100%;
+        ;
+      }
+
+      .card-img {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-left: 60%;
+        transform: translateX(-50%);
+
+        @media (max-width: 1140px) {
+          margin: 0;
+          transform: none;
+          width: 100%;
+          position: absolute;
+          height: auto;
+        }
+      }
+
+      .vgr-cards {
+        .card {
+          display: flex;
+          flex-flow: wrap;
+          flex: 100%;
+
+          &:nth-child(even) .card-img-body {
+            order: 2;
+          }
+
+          &:nth-child(even) .card-body {
+            padding-left: 1.2rem;
+            padding-right: 1.25rem;
+          }
+
+          @media (max-width: 576px) {
+            display: block;
+          }
+
+        }
+
+        .card-img-body {
+          flex: 1;
+          overflow: hidden;
+          position: relative;
+
+          @media (max-width: 576px) {
+            width: 100%;
+            height: 100%;
+          }
+
+        }
+
+        .card-img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          margin-left: 50%;
+          transform: translateX(-50%);
+
+          @media (max-width: 1140px) {
+            margin: 0;
+            transform: none;
+            width: 100%;
+            height: auto;
+          }
+
+        }
+
+        .card-body {
+          flex: 2;
+          padding: 1.25rem;
+
+          @media (max-width: 576px) {
+            padding: 0;
+          }
+
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <h1><a href="/" class="scrollto">Restrategix</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="./index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li class="menu-has-children">
+            <a href="">Services</a>
+            <ul>
+              <li><a href="/business-consulting.html">Business consulting</a></li>
+              <li><a href="/digital-campaign.html">Digital campaign</a></li>
+              <li><a href="/software.html"">Software house</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href=" #services">Services</a></li> -->
+              <li><a href="/insight-list.html">Insight</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+
+  <main id="main" clas class="margin-main">
+    <!-- <section id="about"> -->
+    <div class="container-fluid">
+      <header class="section-header">
+        <h3>Insight</h3>
+      </header>
+    </div>
+    </div>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 mb-4">
+            <a href="./insight.html">
+              <div class="card">
+                <img src="./img/Market-ilustrasi.png" alt="" class="card-img-top">
+                <div class="card-body">
+                  <span class="text-category">insight | sales</span>
+                  <br />
+                  <br />
+                  <h5 class="card-title">MARKET PENETRATION STRATEGY</h5>
+                  <p class="card-text">Market penetration adalah sebuah cara yang dilakukan oleh perusahaan...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <a href="./5-metric-dalam-mengukur-pertumbuhan-bisnis.html">
+              <div class="card">
+                <img src="./img/5-metric-bisnis.png" alt="" class="card-img-top">
+                <div class="card-body">
+                  <span class="text-category">insight | bisnis</span>
+                  <br />
+                  <br />
+                  <h5 class="card-title">5 Metric dalam mengukur pertumbuhan bisnis</h5>
+                  <p class="card-text">Para pebisnis yang sukses sangat terobsesi dengan metrik atau alat ukur...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <a href="./5-metric-dalam-mengukur-pertumbuhan-bisnis.html">
+              <div class="card">
+                <img src="./img/Market-ilustrasi.png" alt="" class="card-img-top">
+                <div class="card-body">
+                  <span class="text-category">insight | sales</span>
+                      <br />
+                      <br />
+                  <h5 class="card-title">MARKET PENETRATION STRATEGY</h5>
+                  <p class="card-text">Market penetration adalah sebuah cara yang dilakukan oleh perusahaan...</p>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- </section> -->
+    <!-- #about -->
+    <!-- </section> -->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="https://upload.wikimedia.org/wikipedia/id/6/67/Sari_Roti-Rotinya_Indonesia.png" alt="" />
+          <img src="img/client2.png" alt="" />
+          <img src="img/client3.png" alt="" />
+          <img src="img/client4.png" alt="" />
+          <img src="img/client5.png" alt="" />
+          <img src="img/client6.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 footer-info">
+            <h3>Restrategix</h3>
+            <p>
+              Kami hadir menjadi partner terpercaya bagi setiap klien dalam menangani berbagai kebutuhan layanan
+              bisnis. Kami
+              mendiversifikasi bisnis ke dalam tiga kategori yaitu business consulting, software house & digital
+              advertising
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-md-12 footer-info">
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br />
+              <strong>Email:</strong> customerservices@restrategix.id<br />
+              <strong>Alamat</strong> Gedung EightyEight@Kasablanka, Floor 10
+              Jl. Raya Casablanca No.Kav.88, Menteng Dalam
+              Jakarta Selatan, Indonesia<br />
+            </p>
+
+            <!-- <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; 2023 <strong>Restrategix</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://Restrategix.idlicense/
+          Purchase the pro version with working PHP/AJAX contact form: https://Restrategix.idbuy/?theme=Restrategix
+        -->
+        Designed by <a href="https://Restrategix.id">Restrategix</a>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- CompanyName Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
