@@ -173,6 +173,10 @@ h6 {
   margin: 0;
 }
 
+.h4{
+  font-family: "Roboto", sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -237,6 +241,7 @@ h6 {
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
 }
 
 #intro p {
@@ -387,7 +392,7 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: #242323;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
@@ -500,7 +505,7 @@ h6 {
   display: block;
   outline: none;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #mobile-nav ul li a:hover {
@@ -570,6 +575,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h3 {
   font-size: 32px;
+  font-family: "Roboto", sans-serif;
   color: #111;
   text-transform: uppercase;
   text-align: center;
